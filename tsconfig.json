@@ -1,19 +1,19 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"jsx": "react",
-		"module": "commonjs",
-		"declaration": true,
-		"lib": ["dom", "es6", "es2017"],
-		"strict": true,
-		"noUnusedLocals": false,
-		"noUnusedParameters": true,
-		"noImplicitReturns": true,
-		"noImplicitAny": false,
-		"outDir": "./dist/",
-		"rootDir": "./src",
-		"skipLibCheck": true
-	},
-	"exclude": ["node_modules", "./dist/server/"],
-	"include": ["./src"]
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "react",
+    "module": "commonjs",
+    "declaration": true,
+    "lib": ["dom", "es6", "es2017"],
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "outDir": "./dist/",
+    "rootDir": "./src",
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "./dist/server/", "./test/acceptance/"],
+  "include": ["./src"]
 }
