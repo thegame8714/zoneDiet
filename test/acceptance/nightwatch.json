@@ -1,0 +1,40 @@
+{
+  "src_folders": ["./test/acceptance/tests"],
+  "test_runner": {
+    "type": "mocha",
+    "options": {
+      "ui": "bdd",
+      "reporter": "list"
+    }
+  },
+  "selenium": {
+    "start_process": true,
+    "server_path": "./test/acceptance/selenium-server-standalone-3.9.1.jar",
+    "log_path": "",
+    "default_path_prefix": "",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/.bin/chromedriver"
+    }
+  },
+
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "silent": true,
+      "screenshots": {
+        "enabled": false,
+        "path": ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "args": ["--no-sandbox"]
+        },
+        "acceptSslCerts": true
+      }
+    }
+  }
+}
