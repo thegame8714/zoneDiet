@@ -6,7 +6,7 @@
   "author": "Fabio Salimbeni",
   "license": "MIT",
   "scripts": {
-    "serverStart": "tsc && nodemon --exec babel-node ./dist/server/index.js --ignore ./dist/client/",
+    "start": "tsc && nodemon --exec babel-node ./dist/server/index.js --ignore ./dist/client/",
     "test:acceptance": "./node_modules/.bin/nightwatch -c ./test/acceptance/nightwatch.json -e default"
   },
   "files": [
